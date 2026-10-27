@@ -1,0 +1,4 @@
+  32 docs/bitacora/lab4/evidencia/config/initFREE_lab4.ora
+ 122 docs/bitacora/lab4/evidencia/config/initFREE_lab4_memoria.ora
+ 154 total
+== Parámetros que tienen valor en MEMORIA pero NO están escritos en el SPFILE (derivados o por defecto) ==
