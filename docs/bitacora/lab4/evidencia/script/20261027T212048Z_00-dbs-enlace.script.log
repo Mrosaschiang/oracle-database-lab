@@ -1,0 +1,2 @@
+lrwxrwxrwx 1 oracle oinstall 37 Jul  5 22:02 /opt/oracle/product/26ai/dbhomeFree/dbs -> /opt/oracle/oradata/dbconfig/FREE/dbs
+/opt/oracle/oradata/dbconfig/FREE/dbs/academia01.dbf
