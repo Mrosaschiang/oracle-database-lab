@@ -1,0 +1,37 @@
+== 1. Procesos de la instancia FREE (docker top = ps dentro del contenedor) ==
+3764                54321               86308               db_pmon_FREE
+3768                54321               83536               db_clmn_FREE
+3772                54321               84792               db_psp0_FREE
+3776                54321               96384               db_vktm_FREE
+3782                54321               86692               db_gen0_FREE
+3786                54321               126500              db_mman_FREE
+3792                54321               84272               db_gen2_FREE
+3794                54321               83156               db_diag_FREE
+3796                54321               89712               db_ofsd_FREE
+3800                54321               89352               db_gwpd_FREE
+3802                54321               118972              db_dbrm_FREE
+3804                54321               83852               db_vkrm_FREE
+3808                54321               103368              db_pman_FREE
+3811                54321               95272               db_dia0_FREE
+3813                54321               94908               db_dbw0_FREE
+   ... total de procesos de background (db_*_FREE en 26ai; ora_*_FREE en versiones anteriores): 63
+== 2. Procesos servidor (uno por sesión dedicada) y listener ==
+3737                54321               /opt/oracle/product/26ai/dbhomeFree/bin/tnslsnr LISTENER -inherit
+   (si no ves ningún oracleFREE es que no hay sesiones abiertas por red: abre SQLcl en otra terminal y repite)
+== 3. Memoria del contenedor (incluye la SGA) ==
+NAME          MEM USAGE / LIMIT     CPU %
+oralab-26ai   2.052GiB / 7.594GiB   3.26%
+== 4. La base de datos en disco: archivos del CDB y de FREEPDB1 ==
+drwxr-x--- 2 oracle oinstall 4.0K Oct 27 21:25 FREEPDB1
+-rw-r----- 1 oracle oinstall  18M Oct 27 21:28 control01.ctl
+-rw-r----- 1 oracle oinstall  18M Oct 27 21:28 control02.ctl
+drwxr-x--- 2 oracle oinstall 4.0K Oct 27 15:57 pdbseed
+-rw-r----- 1 oracle oinstall 201M Oct 27 21:25 redo01.log
+-rw-r----- 1 oracle oinstall 201M Oct 27 21:25 redo02.log
+-rw-r----- 1 oracle oinstall 201M Oct 27 21:28 redo03.log
+-rw-r----- 1 oracle oinstall 681M Oct 27 21:25 sysaux01.dbf
+-rw-r----- 1 oracle oinstall 1.1G Oct 27 21:25 system01.dbf
+-rw-r----- 1 oracle oinstall  21M Jul  5 22:00 temp01.dbf
+-rw-r----- 1 oracle oinstall  26M Oct 27 21:25 undotbs01.dbf
+-rw-r----- 1 oracle oinstall 7.1M Oct 27 21:25 users01.dbf
+-- FREEPDB1 --
