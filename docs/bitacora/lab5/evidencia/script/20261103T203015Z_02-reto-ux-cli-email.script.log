@@ -1,0 +1,21 @@
+
+Session altered.
+
+===== UX_CLI_EMAIL (100 000 entradas, claves que llegan desordenadas) =====
+
+Index analyzed.
+
+
+NAME		   HEIGHT    LF_BLKS	BR_BLKS    LF_ROWS    BR_ROWS ENTRADAS_POR_HOJA   FO_MEDIO   PCT_USED
+-------------- ---------- ---------- ---------- ---------- ---------- ----------------- ---------- ----------
+UX_CLI_EMAIL		3	 501	      3     100000	  500		    200        167	   90
+
+===== PK_CLIENTE (100 000 entradas, claves que llegan en orden ascendente) =====
+
+Index analyzed.
+
+
+NAME		   HEIGHT    LF_BLKS	BR_BLKS    LF_ROWS    BR_ROWS ENTRADAS_POR_HOJA   FO_MEDIO   PCT_USED
+-------------- ---------- ---------- ---------- ---------- ---------- ----------------- ---------- ----------
+PK_CLIENTE		2	 187	      1     100000	  186		    535        186	  100
+
